@@ -7,6 +7,7 @@ gem 'rails', '3.2.17'
 
 group :production do
   gem 'pg'
+  gem 'rails_12factor'
 end
 
 group :development do
@@ -28,6 +29,7 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'faker'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
