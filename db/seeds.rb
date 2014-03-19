@@ -68,8 +68,17 @@ rand(4..10).times do
   end
 end
 
-u = User.first
-u.update_attributes(
+# u = User.first
+# u.update_attributes(
+#   name: 'Admin User',
+#   email: 'admin@example.com', 
+#   password: 'helloworld', 
+#   password_confirmation: 'helloworld')
+# u.skip_confirmation!
+# u.save
+# u.update_attribute(:role, 'admin')
+
+u = User.new(
   name: 'Admin User',
   email: 'admin@example.com', 
   password: 'helloworld', 
